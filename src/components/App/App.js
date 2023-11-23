@@ -13,7 +13,7 @@ const App = () => {
 
   let trackExampleApp = {
     name: 'un dos tres',
-    artist : 'Lionel Messi',
+    artist : 'Lionel Messi xxx',
     album : 'allez le bleu',
     id : 'truc',
   };
