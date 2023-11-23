@@ -1,0 +1,60 @@
+/* App.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .Container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .BlueSection {
+    flex: 1;
+    background-color: #083D77;
+    display: flex;
+  }
+  
+  .RedSection {
+    flex: 1;
+    background-color: #F95738;
+    display: flex;
+  }
+  
+/* Partie relative aux composants internes à la BlueSection */
+
+  .SearchContainer {
+    background-color: #EBEBD3;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    border-radius: 5%;
+    display: block;
+
+  }
+
+  .SearchTitle {
+    margin: 5% auto 0 auto;
+    text-align: center;
+  }
+
+  .SearchBar {
+    background-color: red;
+  }
+
+/* Partie relative aux composants internes à la RedSection */
+
+
+  .PlaylistContainer {
+    background-color: #EE964B;
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    border-radius: 5%;
+    display: flex;
+  }
+
+  .PlaylistTitle {
+    margin: 5% auto 0 auto;
+  }

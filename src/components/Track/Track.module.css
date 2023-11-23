@@ -1,0 +1,17 @@
+.TrackContainer {
+    box-sizing: content-box;
+    /* border: 1px solid #000;  2px de largeur, solide et couleur noire */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.Track {
+    margin: 10px 0 0 10px;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 0.8rem;
+    overflow: hidden;
+
+    /* white-space: nowrap;*/
+}
