@@ -4,25 +4,48 @@ import styles from './SearchBar.module.css';
 
 
 
-function SearchBar(){
+function SearchBar({ searchSpotify }){
 
-    const [searchTerms, setSearchTerms] = useState('');
+    const [term, setTerm] = useState('');
 
-    function handleChange(event) {
-        setSearchTerms(event.target.input);
-    }
+    function handleTermChange(event) {
+        if (event.target.value) {
+        setTerm(event.target.value);
+        searchSpotify(term)
+        } else {searchSpotify("")}
+    };
+
+    function handleSearch(event) {
+        event.preventDefault();
+    };
 
     return (
         <div>
-            <div className={styles.SearchBarContainer}>
-                <input type='text' placeholder='Track ?' className={styles.SearchBarInput} onChange={handleChange}></input>
-            </div>
-            <div className={styles.SearchButtonContainer}>
-                <p>Search</p>
-            </div>
+            <form className={styles.SearchBarAndButtonContainer} onSubmit={handleSearch}>
+                <div className={styles.SearchBarContainer}>
+                    <input placeholder="Track ?" className={styles.SearchBarInput} onChange={handleTermChange} />
+                </div>
+                <div className={styles.SearchButtonContainer} >
+                </div>
+            </form>
         </div>
     )
 }
 
 
 export default SearchBar;
+
+
+
+/*
+
+            <div className={styles.SearchBarContainer}>
+                <input type='text' placeholder='Track ?' className={styles.SearchBarInput} onChange={handleTermChange}></input>
+            </div>
+            <div className={styles.SearchButtonContainer} >
+                <button type="submit">Let's Go</button> // c'était pas comme ça ça
+            </div>
+            //
+
+
+*/

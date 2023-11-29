@@ -11,7 +11,7 @@
 }
 
 input {
-    border: 0px solid white;
+    border: 1px solid white;
     padding: 0;
     margin: 0;
     background-color: #E4E4D8;
@@ -47,8 +47,4 @@ button {
 
 button:hover{
     cursor: pointer;
-}
-
-*:focus {
-    outline: none;
 }

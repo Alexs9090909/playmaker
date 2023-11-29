@@ -7,8 +7,7 @@ import styles from './Tracklist.module.css';
 function Tracklist(props) {
     return (
         <div className={styles.TracklistContainer}>
-
-           {props.tracklistData.map((track,index) => <Track trackData={track} key={track.id} />)} 
+           {props.tracklistData.map((track,index) => <Track trackData={track} key={track.id} addPlaylistTracks={props.addPlaylistTracks} />)} 
         </div>
     )
 }
