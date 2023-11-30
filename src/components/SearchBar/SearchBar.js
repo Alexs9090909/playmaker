@@ -23,7 +23,7 @@ function SearchBar({ searchSpotify }){
         <div>
             <form className={styles.SearchBarAndButtonContainer} onSubmit={handleSearch}>
                 <div className={styles.SearchBarContainer}>
-                    <input placeholder="Track ?" className={styles.SearchBarInput} onChange={handleTermChange} />
+                    <input placeholder="Search Tracks" className={styles.SearchBarInput} onChange={handleTermChange} />
                 </div>
                 <div className={styles.SearchButtonContainer} >
                 </div>

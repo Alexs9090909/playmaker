@@ -12,15 +12,15 @@
 
 input {
     border: 0px solid white;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-    background-color: #E4E4D8;
+    background-color: ;
     font: 13px sans-serif;
     height: 25px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     padding: 5px;
-    border-radius: 10%;
+    /* border-radius: 12px;*/
 }
 
 .SearchBarButtonContainer, button {
@@ -34,7 +34,6 @@ button {
     padding: auto;
     width : 20%;
     background-color: white;
-    border-radius: 10%;
     border: 1px black;
     font-weight: 600;
     justify-content: center;
@@ -42,7 +41,7 @@ button {
     align-content: center;
     text-align: center;
     align-items: center;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover{

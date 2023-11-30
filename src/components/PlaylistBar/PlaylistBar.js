@@ -28,7 +28,7 @@ function PlaylistBar({ saveSpotifyPlaylist , playlistTracks }){
         <div>
             <form className={styles.SearchBarAndButtonContainer} onSubmit={handleSave}>
                 <div className={styles.SearchBarContainer}>
-                    <input placeholder="Playlist title ?" style={{ backgroundColor: '#E29755' }} className={styles.SearchBarInput} onChange={handleTitleChange} />
+                    <input placeholder="Playlist title " className={styles.SearchBarInput} onChange={handleTitleChange} />
                 </div>
                 <div className={styles.SearchButtonContainer} >
                     <button type="submit">Save</button>

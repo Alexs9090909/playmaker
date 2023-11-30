@@ -17,7 +17,7 @@ input {
     background-color: #E4E4D8;
     font: 13px sans-serif;
     height: 25px;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     padding: 5px;
     border-radius: 10%;
@@ -42,7 +42,7 @@ button {
     align-content: center;
     text-align: center;
     align-items: center;
-    font-family: 'Signika', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 button:hover{

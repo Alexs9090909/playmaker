@@ -6,6 +6,7 @@ import Tracklist from '../Tracklist/Tracklist';
 import { getToken, Spotify } from '../../utils/Spotify';
 import PlaylistBar from '../PlaylistBar/PlaylistBar';
 import Playlist from '../Playlist/Playlist';
+import logo from '../../logo.svg';
 
 
 const App = () => {
@@ -41,9 +42,14 @@ const App = () => {
     await Spotify.save(playlistTitle, uriArray);
   };
 
+  
+
   return (
     <div className={styles.Container}>
-      <button onClick={getToken}>connect</button>
+      <button className={styles.ConnectButton} onClick={getToken}>
+      <img src={logo} className="App-logo" alt="logo" />
+        Connect
+      </button>
       <div className={styles.BlueSection}>
         <div className={styles.SearchContainer}>
           <h1 className={styles.SearchTitle}>Search</h1>
