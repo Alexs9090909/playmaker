@@ -15,7 +15,6 @@ const getToken = () => {
     } else if (window.location.hash.length > 1) {
 
         const hashParameters = {}
-        // window.location.hash.split('&').forEach(i => hashParameters[i] = i);
         window.location.hash
             .slice(1) // to remove # sign
             .split('&') // to split to paramater/value groups))
